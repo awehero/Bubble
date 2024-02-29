@@ -19,3 +19,6 @@
   border-radius: 5px;
   cursor: pointer;
 }
+#textVeryLarge {
+  font-size: 30px;
+}
