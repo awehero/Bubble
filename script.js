@@ -3,7 +3,7 @@ let nails = 0;
 function updatePopsCounter() {
   popsCounter.innerText = pops;
 }
-document.getElementById('myButton').addEventListener('click', function() {
+document.getElementById('bubbleButton').addEventListener('click', function() {
   pops++;
   updatePopsCounter();
 });
