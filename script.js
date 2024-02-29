@@ -19,7 +19,7 @@ document.getElementById('nailsUpgradeButton').addEventListener('click', function
     updatePopsCounterElement();
     updateUpgradeElements();
   }
-};
+}
 //fade text
 const fadeText = document.getElementById("notEnoughPopsText");
 fadeText.classList.remove("hidden");
