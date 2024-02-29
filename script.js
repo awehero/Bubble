@@ -4,4 +4,5 @@ function updatePopsCounter() {
 }
 document.getElementById('myButton').addEventListener('click', function() {
   pops++;
+  updatePopsCounter();
 });
