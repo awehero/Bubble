@@ -1,7 +1,9 @@
 #buttonContainer {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #ccc;
+  margin-top: 100px;
+  margin-left: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
