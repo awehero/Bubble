@@ -19,10 +19,16 @@ document.getElementById('nailsUpgradeButton').addEventListener('click', function
     updatePopsCounterElement();
     updateUpgradeElements();
   }
+  if (pops < 10)
+  {
+    notEnoughPops();
+  }
 });
 //fade text
+function notEnoughPops() {
 const fadeText = document.getElementById("notEnoughPopsText");
 fadeText.classList.remove("hidden");
 setTimeout(function() {
   fadeText.classList.add("hidden");
 }, 2000);
+}
