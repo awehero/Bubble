@@ -12,4 +12,7 @@
   height: 100px;
   margin-top: 1000px;
   margin-left: 1500px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
