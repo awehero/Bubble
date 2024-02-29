@@ -1,5 +1,7 @@
 #myButton {
   background-image: url('rainbow.png');
+  width: 100px;
+  height: 100px;
   margin-top: 1000px;
   margin-left: 1500px;
 }
