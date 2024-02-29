@@ -1,6 +1,6 @@
 #buttonContainer {
-  width: 315px;
-  height: 315px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #ccc;
   margin-top: 100px;
   margin-left: 500px;
@@ -16,9 +16,12 @@
   color: white;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
 }
 #textVeryLarge {
   font-size: 30px;
+}
+#textLarge {
+  font-size: 20px;
 }
