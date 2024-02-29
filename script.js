@@ -1,3 +1,4 @@
+//upgrade stuff
 let pops = 0;
 let nails = 0;
 function updatePopsCounterElement() {
@@ -19,3 +20,9 @@ document.getElementById('nailsUpgradeButton').addEventListener('click' function(
     updateUpgradeElements();
   }
 };
+//fade text
+const fadeText = document.getElementById("notEnoughPopsText");
+fadeText.classList.remove("hidden");
+setTimeout(function() {
+  fadeText.classList.add("hidden");
+}, 2000);
