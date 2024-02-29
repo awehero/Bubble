@@ -11,7 +11,7 @@ document.getElementById('bubbleButton').addEventListener('click', function() {
   pops++;
   updatePopsCounterElement();
 });
-document.getElementById('nailsUpgradeButton').addEventListener('click' function() {
+document.getElementById('nailsUpgradeButton').addEventListener('click', function() {
   if (pops >= 10)
   {
     pops -= 10;
