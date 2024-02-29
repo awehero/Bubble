@@ -1,6 +1,14 @@
+#buttonContainer {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #myButton {
   background-image: url('rainbow.png');
-  width: 100px;
+  width: 150px;
   height: 100px;
   margin-top: 1000px;
   margin-left: 1500px;
