@@ -64,3 +64,11 @@ setInterval(function() {
 function updateNailCostElement() {
   nailCost.innerText = nailcost;
 }
+//dart money and costs
+setInterval(function() {
+  pops += 10 * darts;
+  updatePopsCounterElement();
+}, 1000);
+function updateDartCostElement() {
+  dartCost.innerText = dartcost;
+}
