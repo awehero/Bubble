@@ -34,6 +34,6 @@ setTimeout(function() {
 }
 //nail money
 setInterval(function() {
-  pops += pops + nails;
+  pops += nails;
   updatePopsCounterElement();
 }, 1000);
