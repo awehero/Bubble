@@ -32,3 +32,10 @@ setTimeout(function() {
   fadeText.classList.add("hidden");
 }, 2000);
 }
+//nail money
+while (1 = 1)
+{
+  setTimeout(function() {
+    pops++;
+  }, 1000);
+}
