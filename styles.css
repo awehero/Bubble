@@ -12,8 +12,20 @@
   height: 300px;
   background-image: url('images/bubble.png');
   background-size: cover;
-  color: white;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 150px;
+  cursor: pointer;
+}
+#nailsUpgradeButton {
+  width: 100px;
+  height: 50px;
+  background-image: url('images/nails.png');
+  background-size: cover;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
