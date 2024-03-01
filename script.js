@@ -6,10 +6,20 @@ let fingers = 1;
 let nailcost = 10;
 let dartcost = 100;
 let fingercost = 275;
+const currentTab = "shop";
+const notShop = document.getElementById("notShop");
 updateUpgradeElements();
 updateNailCostElement();
 updateDartCostElement();
 updateFingerCostElement();
+updateCurrentTab();
+function updateCurrentTab() {
+  if (currentTab = "shop") {
+    
+  } else {
+    
+  }
+}
 function updatePopsCounterElement() {
   popsCounter.innerText = pops;
 }
