@@ -7,7 +7,9 @@ let nailcost = 10;
 let dartcost = 100;
 let fingercost = 275;
 const currentTab = "shop";
-const notShop = document.getElementById("notShop");
+const tabShop = document.getElementById("tabShop");
+const tabUpgrades = document.getElementById("tabUpgrades");
+const tabAchievements = document.getElementById("tabAchievements")
 updateUpgradeElements();
 updateNailCostElement();
 updateDartCostElement();
@@ -15,9 +17,21 @@ updateFingerCostElement();
 updateCurrentTab();
 function updateCurrentTab() {
   if (currentTab = "shop") {
-    
+    tabShop.classList.remove("hidden");
+    tabUpgrades.classList.add("hidden");
+    tabAchievements.classList.add("hidden");
   } else {
-    
+    if (currentTab = "upgrades") {
+    tabShop.classList.add("hidden");
+    tabUpgrades.classList.remove("hidden");
+    tabAchievements.classList.add("hidden");
+    } else {
+    if (currentTab = "achievements") {
+    tabShop.classList.add("hidden");
+    tabUpgrades.classList.add("hidden");
+    tabAchievements.classList.remove("hidden");
+    }
+    }
   }
 }
 function updatePopsCounterElement() {
