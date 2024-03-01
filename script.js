@@ -1,6 +1,7 @@
 //upgrade stuff
 let pops = 0;
 let nails = 0;
+let nailcost = 10;
 function updatePopsCounterElement() {
   popsCounter.innerText = pops;
 }
@@ -12,14 +13,15 @@ document.getElementById('bubbleButton').addEventListener('click', function() {
   updatePopsCounterElement();
 });
 document.getElementById('nailsUpgradeButton').addEventListener('click', function() {
-  if (pops >= 10)
+  if (pops >= nailcost)
   {
-    pops -= 10;
+    pops -= nailcost;
     nails++;
     updatePopsCounterElement();
     updateUpgradeElements();
+    updateNailCostElement();
   }
-  if (pops < 10)
+  if (pops < nailcost)
   {
     notEnoughPops();
   }
@@ -32,8 +34,10 @@ setTimeout(function() {
   fadeText.classList.add("hidden");
 }, 2000);
 }
-//nail money
+//nail money and costs
 setInterval(function() {
   pops += nails;
   updatePopsCounterElement();
 }, 1000);
+function updateNailCostElement() {
+  nailCost.innerText = 10;
