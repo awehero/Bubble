@@ -1,41 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html><head>
     <title>
       Bubble Pop Simulator
     </title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="bubbletab.png">
   </head>
-  <body>
+  <body id="mainBody">
     <div class="backgroundDiv"></div>
-    <div class="textVeryLarge">Pop the bubble!</div>
-    <div class="textVeryLarge">
-      Pops:&nbsp<span id="popsCounter">0</span>
-    </div>
-    <div id="bubbleButtonContainer">
-      <button id="bubbleButton"></button>
-    </div>
-    <div class="upgradeContainer">
-      <div>
-        <button class="upgradeButton" id="nailsUpgradeButton">Nails:&nbsp<span id="numberOfNails">0</span></button>
-        <div class="textLarge" id="nailCostText">
-          Cost:&nbsp<span id="nailCost">0</span>
+    <div class="leftMainContainer">
+        <div class="topContainer">
+          <div>
+            <div class="textVeryLarge" id="mainTitle">Bubble Pop Simulator</div>
+            <div class="textVeryLarge">
+              Pops:&nbsp;<span id="popsCounter">4611113</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <button class="upgradeButton" id="dartsUpgradeButton">Darts:&nbsp<span id="numberOfDarts">0</span></button>
-        <div class="textLarge" id="dartCostText">
-          Cost:&nbsp<span id="dartCost">0</span>
-        </div>
-      </div>
-      <div>
-        <button class="upgradeButton" id="fingersUpgradeButton">Fingers:&nbsp<span id="numberOfFingers">0</span></button>
-        <div class="textLarge" id="fingerCostText">
-          Cost:&nbsp<span id="fingerCost">0</span>
-        </div>
+      <div id="bubbleButtonContainer">
+        <button id="bubbleButton"></button>
       </div>
     </div>
+    <div class="rightMainContainer">
+      <div class="tabContainer">
+        <button class="tabButton" id="shopTab">Shop</button>
+        <button class="tabButton" id="upgradesTab">Upgrades</button>
+        <button class="tabButton" id="achievementsTab">Achievements</button>
+      </div>
+      <div class="tabDataContainer">
+        <div id="tabShop" class="hidden">
+          <div class="upgradeContainer">
+            <div>
+              <button class="upgradeButton" id="nailsUpgradeButton">Nails:&nbsp;<span id="numberOfNails">131</span></button>
+              <div class="textLarge" id="nailCostText">
+                Cost:&nbsp;<span id="nailCost">17171</span>
+              </div>
+            </div>
+            <div>
+              <button class="upgradeButton" id="dartsUpgradeButton">Darts:&nbsp;<span id="numberOfDarts">100</span></button>
+              <div class="textLarge" id="dartCostText">
+                Cost:&nbsp;<span id="dartCost">100100</span>
+              </div>
+            </div>
+            <div>
+              <button class="upgradeButton" id="fingersUpgradeButton">Fingers:&nbsp;<span id="numberOfFingers">64</span></button>
+              <div class="textLarge" id="fingerCostText">
+                Cost:&nbsp;<span id="fingerCost">149859</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tabUpgrades" class="hidden">Upgrades Data</div>
+        <div id="tabAchievements" class="hidden">Achievements Data</div>
+      </div>
+    </div>  
     <div id="notEnoughPopsText" class="hidden">
       You do not have enough pops to purchase this upgrade!
     </div>
