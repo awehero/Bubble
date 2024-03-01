@@ -19,6 +19,7 @@ document.getElementById('nailsUpgradeButton').addEventListener('click', function
     nails++;
     updatePopsCounterElement();
     updateUpgradeElements();
+    nailcost = 10 + Math.pow(nails, 2);
     updateNailCostElement();
   }
   if (pops < nailcost)
@@ -40,4 +41,4 @@ setInterval(function() {
   updatePopsCounterElement();
 }, 1000);
 function updateNailCostElement() {
-  nailCost.innerText = 10;
+  nailCost.innerText = nailcost;
