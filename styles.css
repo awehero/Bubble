@@ -20,11 +20,9 @@
   border-radius: 150px;
   cursor: pointer;
 }
-#nailsUpgradeButton {
+.upgradeButton {
   width: 100px;
   height: 50px;
-  background-image: url('images/nails.png');
-  background-size: cover;
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -32,6 +30,14 @@
   border: none;
   border-radius: 150px;
   cursor: pointer;
+}
+#nailsUpgradeButton {
+  background-image: url('images/nails.png');
+  background-size: cover;
+}
+#dartsUpgradeButton {
+  background-image: url('images/darts.png');
+  background-size:cover;
 }
 .textVeryLarge {
   font-size: 30px;
