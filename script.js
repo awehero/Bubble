@@ -36,6 +36,6 @@ setTimeout(function() {
 while (1 = 1)
 {
   setTimeout(function() {
-    pops++;
+    pops = pops + nails;
   }, 1000);
 }
