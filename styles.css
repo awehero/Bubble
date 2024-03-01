@@ -57,13 +57,15 @@
   align-items: center;
 }
 #nailCostText {
+  margin-left: 40px;
   font-size: 20px;
 }
 #dartCostText {
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: 20px;
 }
 #fingerCostText {
+  margin-text: 40px;
   font-size: 20px;
 }
 .textLarge {
