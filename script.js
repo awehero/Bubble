@@ -1,7 +1,9 @@
 //upgrade stuff
 let pops = 0;
 let nails = 0;
+let darts = 0;
 let nailcost = 10;
+let dartcost = 100;
 updateNailCostElement();
 function updatePopsCounterElement() {
   popsCounter.innerText = pops;
