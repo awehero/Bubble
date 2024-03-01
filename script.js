@@ -42,3 +42,4 @@ setInterval(function() {
 }, 1000);
 function updateNailCostElement() {
   nailCost.innerText = nailcost;
+}
