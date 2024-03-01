@@ -2,20 +2,25 @@
 let pops = 0;
 let nails = 0;
 let darts = 0;
+let fingers = 1;
 let nailcost = 10;
 let dartcost = 100;
+let fingercost = 275;
 updateNailCostElement();
 updateDartCostElement();
+updateFingerCostElement();
 function updatePopsCounterElement() {
   popsCounter.innerText = pops;
 }
 function updateUpgradeElements() {
   numberOfNails.innerText = nails;
   numberOfDarts.innerText = darts;
+  numberOfFingers.innerText = fingers;
 }
-//buttons
+//### BUTTONS ###
+//bubble button
 document.getElementById('bubbleButton').addEventListener('click', function() {
-  pops++;
+  pops += fingers;
   updatePopsCounterElement();
 });
 document.getElementById('nailsUpgradeButton').addEventListener('click', function() {
@@ -33,6 +38,7 @@ document.getElementById('nailsUpgradeButton').addEventListener('click', function
     notEnoughPops();
   }
 });
+//dart button
 document.getElementById('dartsUpgradeButton').addEventListener('click', function() {
   if (pops >= dartcost)
   {
@@ -48,6 +54,22 @@ document.getElementById('dartsUpgradeButton').addEventListener('click', function
     notEnoughPops();
   }
 });
+//finger button
+document.getElementById('fingersUpgradeButton').addEventListener('click', function() {
+  if (pops >= fingercost)
+  {
+    pops -= fingercost;
+    fingers++;
+    updatePopsCounterElement();
+    updateUpgradeElements();
+    fingercost = Math.round(249 * Math.pow(Math.E, 0.1 * fingers));
+    updateFingerCostElement();
+  }
+  if (pops < fingercost)
+  {
+    notEnoughPops();
+  }
+});
 //fade text
 function notEnoughPops() {
 const fadeText = document.getElementById("notEnoughPopsText");
@@ -56,6 +78,7 @@ setTimeout(function() {
   fadeText.classList.add("hidden");
 }, 2000);
 }
+//### MONEY AND COSTS ###
 //nail money and costs
 setInterval(function() {
   pops += nails;
@@ -71,4 +94,8 @@ setInterval(function() {
 }, 1000);
 function updateDartCostElement() {
   dartCost.innerText = dartcost;
+}
+//finger costs
+function updateFingerCostElement() {
+  fingerCost.innerText = fingercost;
 }
