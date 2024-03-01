@@ -1,8 +1,5 @@
 #bubbleButtonContainer {
-  width: 300px;
   height: 300px;
-  margin-top: 20px;
-  margin-left: 530px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,22 +17,61 @@
   border-radius: 150px;
   cursor: pointer;
 }
+#mainBody {
+  display: flex;
+}
+.leftMainContainer {
+  display: flex;
+  width: 400px;
+  border: solid;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rightMainContainer {
+  display: flex;
+  width: 400px;
+  border: solid;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tabDataContainer {
+  
+}
+#tabShop {
+  
+}
+#tabUpgrades {
+  
+}
+#tabAchievements {
+  
+}
+.topContainer {
+    height: 110px;
+    justify-content: space-around;
+    display: flex;
+    align-items: baseline;
+}
 .upgradeContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 150px;
+  width: 150px;
+  margin-left: 40%;
 }
 .upgradeButton {
   width: 150px;
   height: 50px;
   font-size: 24px;
   display: flex;
-  justify-content: center;
   align-items: center;
   border: 2px solid #333;
   border-radius: 150px;
   cursor: pointer;
+  justify-content: center;
 }
 #nailsUpgradeButton {
   background-image: url('images/nails.png');
@@ -47,25 +83,52 @@
 }
 #fingersUpgradeButton {
   background-image: url('images/fingers.png');
-  background-size:cover;
+  background-size: cover;
+}
+.tabContainer {
+  display: flex;
+  border: solid 1px #a0a0a0;
+}
+.tabButton {
+  width: max-content;
+  height: 50px;
+  font-size: 24px;
+  color: black;
+  background-color: #b0b0b0;
+  display: flex;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 15px;
+  cursor: pointer;
+  justify-content: center;
+}
+#shopTab {
+  
 }
 .textVeryLarge {
   font-size: 30px;
-  margin-top: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#mainTitle {
+  width: max-content;
+  font-size: 40px;
+  margin-top: 10px;
 }
 #nailCostText {
-  margin-left: 40px;
+  margin-left: 30px;
   font-size: 20px;
 }
 #dartCostText {
-  margin-left: 40px;
+  margin-left: 30px;
   font-size: 20px;
 }
 #fingerCostText {
-  margin-text: 40px;
+  margin-left: 30px;
   font-size: 20px;
 }
 .textLarge {
