@@ -45,6 +45,10 @@
   background-image: url('images/darts.png');
   background-size:cover;
 }
+#fingersUpgradeButton {
+  background-image: url('images/fingers.png');
+  background-size:cover;
+}
 .textVeryLarge {
   font-size: 30px;
   margin-top: 40px;
@@ -56,6 +60,9 @@
   font-size: 20px;
 }
 #dartCostText {
+  font-size: 20px;
+}
+#fingerCostText {
   font-size: 20px;
 }
 .textLarge {
