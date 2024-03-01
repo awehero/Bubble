@@ -2,6 +2,7 @@
 let pops = 0;
 let nails = 0;
 let nailcost = 10;
+updateNailCostElement();
 function updatePopsCounterElement() {
   popsCounter.innerText = pops;
 }
