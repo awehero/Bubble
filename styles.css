@@ -50,7 +50,9 @@
 #nailCostText {
   margin-top: 0px;
 }
-#darts
+#dartCostText {
+  margin-top: 150px;
+}
 .textLarge {
   font-size: 20px;
 }
