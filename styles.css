@@ -36,6 +36,7 @@
   background-size: cover;
 }
 #dartsUpgradeButton {
+  margin-left: 150px;
   background-image: url('images/darts.png');
   background-size:cover;
 }
