@@ -6,6 +6,7 @@ let fingers = 1;
 let nailcost = 10;
 let dartcost = 100;
 let fingercost = 275;
+updateUpgradeElements();
 updateNailCostElement();
 updateDartCostElement();
 updateFingerCostElement();
