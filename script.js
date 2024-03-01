@@ -5,12 +5,15 @@ let darts = 0;
 let nailcost = 10;
 let dartcost = 100;
 updateNailCostElement();
+updateDartCostElement();
 function updatePopsCounterElement() {
   popsCounter.innerText = pops;
 }
 function updateUpgradeElements() {
   numberOfNails.innerText = nails;
+  numberOfDarts.innerText = darts;
 }
+//buttons
 document.getElementById('bubbleButton').addEventListener('click', function() {
   pops++;
   updatePopsCounterElement();
@@ -26,6 +29,21 @@ document.getElementById('nailsUpgradeButton').addEventListener('click', function
     updateNailCostElement();
   }
   if (pops < nailcost)
+  {
+    notEnoughPops();
+  }
+});
+document.getElementById('dartsUpgradeButton').addEventListener('click', function() {
+  if (pops >= dartcost)
+  {
+    pops -= dartcost;
+    darts++;
+    updatePopsCounterElement();
+    updateUpgradeElements();
+    dartcost = 100 + (10 * Math.pow(darts, 2));
+    updateDartCostElement();
+  }
+  if (pops < dartcost)
   {
     notEnoughPops();
   }
