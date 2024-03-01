@@ -89,6 +89,18 @@ document.getElementById('fingersUpgradeButton').addEventListener('click', functi
     notEnoughPops();
   }
 });
+//shop button
+document.getElementById('tabShop').addEventListener('click', function() {
+  currentTab = "shop"
+});
+//upgrades button
+document.getElementById('tabUpgrades').addEventListener('click', function() {
+  currentTab = "upgrades"
+});
+//achievements button
+document.getElementById('tabAchievements').addEventListener('click', function() {
+  currentTab = "achievements"
+});
 //fade text
 function notEnoughPops() {
 const fadeText = document.getElementById("notEnoughPopsText");
