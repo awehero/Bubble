@@ -47,6 +47,10 @@
   justify-content: center;
   align-items: center;
 }
+#nailCostText {
+  margin-top: 0px;
+}
+#darts
 .textLarge {
   font-size: 20px;
 }
