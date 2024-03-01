@@ -32,10 +32,13 @@
   cursor: pointer;
 }
 #nailsUpgradeButton {
+  margin-top: 450px;
+  margin-left: 0px;
   background-image: url('images/nails.png');
   background-size: cover;
 }
 #dartsUpgradeButton {
+  margin-top: 450px;
   margin-left: 150px;
   background-image: url('images/darts.png');
   background-size:cover;
@@ -48,10 +51,12 @@
   align-items: center;
 }
 #nailCostText {
-  margin-top: 0px;
+  margin-top: 500px;
+  margin-left: 0px;
 }
 #dartCostText {
-  margin-top: 150px;
+  margin-top: 500px;
+  margin-left: 150px;
 }
 .textLarge {
   font-size: 20px;
