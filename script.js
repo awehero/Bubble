@@ -90,17 +90,17 @@ document.getElementById('fingersUpgradeButton').addEventListener('click', functi
   }
 });
 //shop button
-document.getElementById('tabShop').addEventListener('click', function() {
+document.getElementById('shopTab').addEventListener('click', function() {
   currentTab = "shop";
   updateCurrentTab();
 });
 //upgrades button
-document.getElementById('tabUpgrades').addEventListener('click', function() {
+document.getElementById('upgradesTab').addEventListener('click', function() {
   currentTab = "upgrades";
   updateCurrentTab();
 });
 //achievements button
-document.getElementById('tabAchievements').addEventListener('click', function() {
+document.getElementById('achievementsTab').addEventListener('click', function() {
   currentTab = "achievements";
   updateCurrentTab();
 });
