@@ -91,17 +91,17 @@ document.getElementById('fingersUpgradeButton').addEventListener('click', functi
 });
 //shop button
 document.getElementById('tabShop').addEventListener('click', function() {
-  currentTab = "shop"
+  currentTab = "shop";
   updateCurrentTab();
 });
 //upgrades button
 document.getElementById('tabUpgrades').addEventListener('click', function() {
-  currentTab = "upgrades"
+  currentTab = "upgrades";
   updateCurrentTab();
 });
 //achievements button
 document.getElementById('tabAchievements').addEventListener('click', function() {
-  currentTab = "achievements"
+  currentTab = "achievements";
   updateCurrentTab();
 });
 //fade text
