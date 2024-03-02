@@ -32,7 +32,7 @@
   display: flex;
   width: 400px;
   border: solid;
-  align-content: center;
+  align-content: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 }
