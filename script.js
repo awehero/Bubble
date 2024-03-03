@@ -223,6 +223,12 @@ setInterval(function() {
     achievement10.id = "all10";
   }
 }, 100);
+const achievement11 = document.getElementById("a11");
+setInterval(function() {
+  if (fingers >= 50 && darts >= 50 && nails >= 50) {
+    achievement11.id = "all50";
+  }
+}, 100);
 //save code
 setInterval(function() {
   saveGame();
