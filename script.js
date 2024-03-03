@@ -147,6 +147,6 @@ function updateFingerCostElement() {
 const achievement1 = document.getElementById("a1");
 setInterval(function() {
   if (pops >= 200) {
-    achievement1.classList.add("200pops");
+    achievement1.id = "200pops";
   }
 }, 100);
