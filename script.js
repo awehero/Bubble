@@ -163,3 +163,15 @@ setInterval(function() {
     achievement3.id = "pops10000";
   }
 }, 100);
+const achievement4 = document.getElementById("a4");
+setInterval(function() {
+  if (nails >= 50) {
+    achievement4.id = "nails50";
+  }
+}, 100);
+const achievement5 = document.getElementById("a5");
+setInterval(function() {
+  if (nails >= 100) {
+    achievement5.id = "nails100";
+  }
+}, 100);
