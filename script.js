@@ -161,16 +161,6 @@ setInterval(function() {
     achievement1.id = "pops100";
   }
 }, 100);
-achievement1.addEventListener('mouseover', function() {
-  aBox.style.display = 'block';
-});
-achievement1.addEventListener('mouseout', function() {
-  aBox.style.display = 'none';
-});
-achievement1.addEventListener('mousemove', function(event) {
-  aBox.style.top = (event.clientY + 10) + 'px';
-  aBox.style.left = (event.clientX + 10) + 'px';
-});
 const achievement2 = document.getElementById("a2");
 setInterval(function() {
   if (pops >= 1000) {
