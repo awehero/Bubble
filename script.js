@@ -51,6 +51,10 @@ function updateUpgradeElements() {
   numberOfDarts.innerText = darts;
   numberOfFingers.innerText = fingers;
 }
+function updateUpgradeCostsElements() {
+  updateNailCostElement();
+  updateDartCostElement();
+  updateFingerCostElement();
 //### BUTTONS ###
 //bubble button
 document.getElementById('bubbleButton').addEventListener('click', function() {
@@ -238,6 +242,9 @@ setInterval(function() {
 function saveGame() {
   const gameState = {
     pops: pops,
+    nails: nails,
+    darts: darts,
+    fingers: fingers,
   };
   const jsonGameState = JSON.stringify(gameState)
   localStorage.setItem('bubblePopGameState', jsonGameState);
@@ -247,6 +254,12 @@ function loadGame() {
   if (jsonGameState) {
     const gameState = JSON.parse(jsonGameState);
     pops = gameState.pops;
+    nails = gameState.nails;
+    darts = gameState.darts;
+    fingers = gameState.fingers;
+    updatePopsCounterElement();
+    updateUpgradeElements();
+    updateUpgradeCostsElements();
   }
 }
 document.getElementById('loadButton').addEventListener('click', function() {
