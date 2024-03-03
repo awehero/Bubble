@@ -51,6 +51,8 @@
 }
 #tabAchievements {
   margin-top: 2%;
+}
+#achievementsContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
