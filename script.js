@@ -136,6 +136,11 @@ document.getElementById('achievementsTab').addEventListener('click', function() 
   currentTab = "achievements";
   updateCurrentTab();
 });
+//options button
+document.getElementById('optionsTab').addEventListener('click', function() {
+  currentTab = "options";
+  updateCurrentTab();
+});
 //fade text
 function notEnoughPops() {
 const fadeText = document.getElementById("notEnoughPopsText");
