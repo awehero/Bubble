@@ -47,6 +47,7 @@ function updateCurrentTab() {
     achievementsTab.classList.add("activeTab");
     optionsTab.classList.remove("activeTab");
     } else {
+      if (currentTab == "options") {
     tabShop.classList.add("hidden");
     tabUpgrades.classList.add("hidden");
     tabAchievements.classList.add("hidden");
@@ -55,6 +56,7 @@ function updateCurrentTab() {
     upgradesTab.classList.remove("activeTab");
     achievementsTab.classList.remove("activeTab");
     optionsTab.classList.add("activeTab");
+      }
     }
     }
   }
