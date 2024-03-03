@@ -64,7 +64,7 @@ document.getElementById('nailsUpgradeButton').addEventListener('click', function
     nails++;
     updatePopsCounterElement();
     updateUpgradeElements();
-    nailcost = 10 + Math.pow(nails, 2);
+    nailcost = Math.round(10 + (nails * 1.15));
     updateNailCostElement();
   } else {
     notEnoughPops();
@@ -78,7 +78,7 @@ document.getElementById('dartsUpgradeButton').addEventListener('click', function
     darts++;
     updatePopsCounterElement();
     updateUpgradeElements();
-    dartcost = 100 + (10 * Math.pow(darts, 2));
+    dartcost = Math.round(100 + (darts * 1.15));
     updateDartCostElement();
   } else {
     notEnoughPops();
@@ -92,7 +92,7 @@ document.getElementById('fingersUpgradeButton').addEventListener('click', functi
     fingers++;
     updatePopsCounterElement();
     updateUpgradeElements();
-    fingercost = Math.round(249 * Math.pow(Math.E, 0.1 * fingers));
+    fingercost = Math.round(50 + (fingers * 1.13));
     updateFingerCostElement();
   } else {
     notEnoughPops();
