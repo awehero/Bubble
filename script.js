@@ -241,6 +241,6 @@ function loadGame() {
 //### SOUNDS ###
 //pop sound
 function playPopSound() {
-  var popSound = document.getElementById("Pop.mp3");
+  var popSound = document.getElementById("popSound");
   audio.play();
 }
