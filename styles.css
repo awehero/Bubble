@@ -166,9 +166,21 @@
   height: 60px;
   width: 60px;
 }
-#pops200 {
+#a1 {
+}
+#a2 {
+}
+#a3 {
+}
+#pops100 {
   background-image: url('images/pop.png');
   background-size: cover;
 }
-#a1 {
+#pops1000 {
+  background-image: url('images/pop2.png');
+  background-size: cover;
+}
+#pops10000 {
+  background-image: url('images/pop3.png');
+  background-size: cover;
 }
