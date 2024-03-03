@@ -177,6 +177,20 @@
 }
 #a3 {
 }
+#a4 {
+}
+#a5 {
+}
+#a6 {
+}
+#a7 {
+}
+#a8 {
+}
+#a9 {
+}
+#a10 {
+}
 #pops100 {
   background-image: url('images/pop.png');
 }
@@ -185,4 +199,22 @@
 }
 #pops10000 {
   background-image: url('images/pop3.png');
+}
+#nails50 {
+  background-image: url('images/nails50.png');
+}
+#nails100 {
+  background-image: url('images/nails100.png');
+}
+#darts50 {
+  background-image: url('images/darts50.png');
+}
+#darts100 {
+  background-image: url('images/darts100.png');
+}
+#fingers50 {
+  background-image: url('images/fingers50.png');
+}
+#fingers100 {
+  background-image: url('images/fingers100.png');
 }
