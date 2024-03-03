@@ -162,6 +162,7 @@
 .achievement {
   background-image: url('images/locked.png');
   background-size: cover;
+  height: 60px;
 }
 #200pops {
   background-image: url('images/pop.png');
