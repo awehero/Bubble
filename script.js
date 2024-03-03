@@ -241,6 +241,10 @@ function loadGame() {
     pops = gameState.pops;
   }
 }
+document.getElementById('loadButton').addEventListener('click', function() {
+  loadGame();
+});
+
 //### SOUNDS ###
 //pop sound
 function playPopSound() {
