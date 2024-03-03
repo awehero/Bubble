@@ -50,21 +50,22 @@
   
 }
 #tabAchievements {
-  
+  margin-top: 2%;
 }
 .topContainer {
-    height: 110px;
-    justify-content: space-around;
-    display: flex;
-    align-items: baseline;
+  height: 110px;
+  justify-content: space-around;
+  display: flex;
+  align-items: baseline;
 }
 .upgradeContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 150px;
-  width: 150px;
-  margin-left: 40%;
+  width: 400px;
+  margin-top: 2%;
+  flex-wrap: wrap;
 }
 .upgradeButton {
   width: 150px;
