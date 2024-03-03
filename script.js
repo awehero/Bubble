@@ -20,25 +20,25 @@ function updateCurrentTab() {
     tabShop.classList.remove("hidden")
     tabUpgrades.classList.add("hidden");
     tabAchievements.classList.add("hidden");
-    tabShop.classList.add("activeTab")
-    tabUpgrades.classList.remove("activeTab");
-    tabAchievements.classList.remove("activeTab");
+    shopTab.classList.add("activeTab")
+    upgradesTab.classList.remove("activeTab");
+    achievementsTab.classList.remove("activeTab");
   } else {
     if (currentTab == "upgrades") {
     tabShop.classList.add("hidden");
     tabUpgrades.classList.remove("hidden");
     tabAchievements.classList.add("hidden");
-    tabShop.classList.remove("activeTab")
-    tabUpgrades.classList.add("activeTab");
-    tabAchievements.classList.remove("activeTab");
+    shopTab.classList.remove("activeTab")
+    upgradesTab.classList.add("activeTab");
+    achievementsTab.classList.remove("activeTab");
     } else {
     if (currentTab == "achievements") {
     tabShop.classList.add("hidden");
     tabUpgrades.classList.add("hidden");
     tabAchievements.classList.remove("hidden");
-    tabShop.classList.remove("activeTab")
-    tabUpgrades.classList.remove("activeTab");
-    tabAchievements.classList.add("activeTab");
+    shopTab.classList.remove("activeTab")
+    upgradesTab.classList.remove("activeTab");
+    achievementsTab.classList.add("activeTab");
     }
     }
   }
