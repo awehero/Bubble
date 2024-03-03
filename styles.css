@@ -166,7 +166,7 @@
   height: 60px;
   width: 60px;
 }
-.200pops {
+#200pops {
   background-image: url('images/pop.png');
   background-size: cover;
 }
