@@ -37,7 +37,7 @@
   flex-wrap: wrap;
 }
 .tabDataContainer {
-  
+  width: 400px;
 }
 .activeTab {
   background-color: #808080;
@@ -163,6 +163,7 @@
   background-image: url('images/locked.png');
   background-size: cover;
   height: 60px;
+  width: 60px;
 }
 #200pops {
   background-image: url('images/pop.png');
