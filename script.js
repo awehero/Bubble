@@ -148,6 +148,10 @@ const aHoverElements = document.getElementsByClassName('achievement');
 Array.from(aHoverElements).forEach(element => {
   element.addEventListener('mouseover', function() {
     aBox.innerText = element.innerText;
+    aBox.style.display = 'block';
+  });
+  element.AddEventListener('mouseout', function() {
+    aBox.style.display = 'none';
   });
 });
 //number of pops
