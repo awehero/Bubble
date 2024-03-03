@@ -150,9 +150,13 @@ Array.from(aHoverElements).forEach(element => {
     aBox.innerText = element.innerText;
     aBox.style.display = 'block';
   });
-  element.AddEventListener('mouseout', function() {
+  element.addEventListener('mouseout', function() {
     aBox.style.display = 'none';
   });
+    element.addEventListener('mousemove', function() {
+        aBox.style.top = (event.clientY + 10) + 'px';
+        aBox.style.left = (event.clientX + 10) + 'px';
+    });
 });
 //number of pops
 const achievement1 = document.getElementById("a1");
