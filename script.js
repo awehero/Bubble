@@ -143,7 +143,13 @@ function updateFingerCostElement() {
   fingerCost.innerText = fingercost;
 }
 //### ACHIEVEMENTS ###
-const aBox = document.getElementById("achievementDescriptionBox");
+const aBox = document.getElementById('achievementDescriptionBox');
+const aHoverElements = document.getElementsByClassName('achievement');
+Array.from(aHoverElements).forEach(element => {
+  element.addEventListener('mouseover', function() {
+    aBox.innerText = element.innerText;
+  });
+});
 //number of pops
 const achievement1 = document.getElementById("a1");
 setInterval(function() {
