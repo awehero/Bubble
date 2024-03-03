@@ -302,6 +302,22 @@ function playPopSound() {
   popSound.play();
 }
 //### UPGRADES ###
+//upgrade text
+const uBox = document.getElementById('upgradeDescriptionBox');
+const uHoverElements = document.getElementsByClassName('upgradesButton');
+Array.from(uHoverElements).forEach(element => {
+  element.addEventListener('mouseover', function() {
+    uBox.innerText = element.innerText;
+    uBox.style.display = 'block';
+  });
+  element.addEventListener('mouseout', function() {
+    uBox.style.display = 'none';
+  });
+    element.addEventListener('mousemove', function() {
+        uBox.style.top = (event.clientY + 10) + 'px';
+        uBox.style.left = (event.clientX + 10) + 'px';
+    });
+});
 //upgrade button
 function hideUpgradeButton(button) {
   if (button.classList.contains('upgradesButton')) {
