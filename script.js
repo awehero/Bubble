@@ -242,5 +242,5 @@ function loadGame() {
 //pop sound
 function playPopSound() {
   var popSound = document.getElementById("popSound");
-  audio.play();
+  popSound.play();
 }
