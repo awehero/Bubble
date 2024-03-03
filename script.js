@@ -154,13 +154,12 @@ setInterval(function() {
 const achievement2 = document.getElementById("a2");
 setInterval(function() {
   if (pops >= 1000) {
-    achievement1.id = "pops1000";
+    achievement2.id = "pops1000";
   }
 }, 100);
-//number of pops
 const achievement3 = document.getElementById("a3");
 setInterval(function() {
   if (pops >= 10000) {
-    achievement1.id = "pops10000";
+    achievement3.id = "pops10000";
   }
 }, 100);
