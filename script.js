@@ -10,6 +10,7 @@ let currentTab = "shop";
 const tabShop = document.getElementById("tabShop");
 const tabUpgrades = document.getElementById("tabUpgrades");
 const tabAchievements = document.getElementById("tabAchievements")
+const tabOptions = document.getElementById("tabOptions")
 updateUpgradeElements();
 updateNailCostElement();
 updateDartCostElement();
@@ -20,25 +21,40 @@ function updateCurrentTab() {
     tabShop.classList.remove("hidden")
     tabUpgrades.classList.add("hidden");
     tabAchievements.classList.add("hidden");
+    tabOptions.classList.add("hidden");
     shopTab.classList.add("activeTab");
     upgradesTab.classList.remove("activeTab");
     achievementsTab.classList.remove("activeTab");
+    optionsTab.classList.remove("activeTab");
   } else {
     if (currentTab == "upgrades") {
     tabShop.classList.add("hidden");
     tabUpgrades.classList.remove("hidden");
     tabAchievements.classList.add("hidden");
+    tabOptions.classList.add("hidden");
     shopTab.classList.remove("activeTab");
     upgradesTab.classList.add("activeTab");
     achievementsTab.classList.remove("activeTab");
+    optionsTab.classList.remove("activeTab");
     } else {
     if (currentTab == "achievements") {
     tabShop.classList.add("hidden");
     tabUpgrades.classList.add("hidden");
     tabAchievements.classList.remove("hidden");
+    tabOptions.classList.add("hidden");
     shopTab.classList.remove("activeTab");
     upgradesTab.classList.remove("activeTab");
     achievementsTab.classList.add("activeTab");
+    optionsTab.classList.remove("activeTab");
+    } else {
+    tabShop.classList.add("hidden");
+    tabUpgrades.classList.add("hidden");
+    tabAchievements.classList.add("hidden");
+    tabOptions.classList.remove("hidden");
+    shopTab.classList.remove("activeTab");
+    upgradesTab.classList.remove("activeTab");
+    achievementsTab.classList.remove("activeTab");
+    optionsTab.classList.add("activeTab");
     }
     }
   }
