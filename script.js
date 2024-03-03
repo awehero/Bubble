@@ -224,6 +224,9 @@ setInterval(function() {
   }
 }, 100);
 //save code
+setInterval(function() {
+  saveGame();
+}, 60000);
 function saveGame() {
   const gameState = {
     pops: pops,
