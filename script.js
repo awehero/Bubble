@@ -325,3 +325,18 @@ function hideUpgradeButton(button) {
     button.disabled = true;
   }
 }
+document.getElementById('upgrade1').addEventListener('click', function() {
+  
+});
+document.getElementById('upgrade2').addEventListener('click', function() {
+  
+});
+document.getElementById('upgrade3').addEventListener('click', function() {
+  
+});
+document.getElementById('upgrade4').addEventListener('click', function() {
+  
+});
+document.getElementById('upgrade5').addEventListener('click', function() {
+  
+});
