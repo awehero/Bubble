@@ -20,7 +20,7 @@ function updateCurrentTab() {
     tabShop.classList.remove("hidden")
     tabUpgrades.classList.add("hidden");
     tabAchievements.classList.add("hidden");
-    shopTab.classList.add("activeTab")
+    shopTab.classList.add("activeTab");
     upgradesTab.classList.remove("activeTab");
     achievementsTab.classList.remove("activeTab");
   } else {
@@ -28,7 +28,7 @@ function updateCurrentTab() {
     tabShop.classList.add("hidden");
     tabUpgrades.classList.remove("hidden");
     tabAchievements.classList.add("hidden");
-    shopTab.classList.remove("activeTab")
+    shopTab.classList.remove("activeTab");
     upgradesTab.classList.add("activeTab");
     achievementsTab.classList.remove("activeTab");
     } else {
@@ -36,7 +36,7 @@ function updateCurrentTab() {
     tabShop.classList.add("hidden");
     tabUpgrades.classList.add("hidden");
     tabAchievements.classList.remove("hidden");
-    shopTab.classList.remove("activeTab")
+    shopTab.classList.remove("activeTab");
     upgradesTab.classList.remove("activeTab");
     achievementsTab.classList.add("activeTab");
     }
@@ -144,8 +144,9 @@ function updateFingerCostElement() {
 }
 //### ACHIEVEMENTS ###
 //number of pops
+const achievement1 = document.getElementById("a1");
 setInterval(function() {
-  if (pops >= 100) {
-    console.log("Yay, you got 100 pops!");
+  if (pops >= 200) {
+    achievement1.classList.add("200pops");
   }
 }, 100);
