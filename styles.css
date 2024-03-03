@@ -172,6 +172,7 @@
   background-size: cover;
   height: 50px;
   width: 50px;
+  cursor: pointer;
 }
 #upgradesTabContainer {
   margin-top: 2%;
