@@ -296,3 +296,11 @@ function playPopSound() {
   var popSound = document.getElementById("popSound");
   popSound.play();
 }
+//### UPGRADES ###
+//upgrade button
+function hideUpgradeButton(button) {
+  if (button.classList.contains('upgradesButton')) {
+    button.style.display = "none";
+    button.disabled = true;
+  }
+}
