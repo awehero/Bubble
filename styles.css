@@ -7,7 +7,7 @@
 #bubbleButton {
   width: 300px;
   height: 300px;
-  background-image: url('images/Bubble.jpg');
+  background-image: url('images/bubble.png');
   background-size: cover;
   font-size: 16px;
   display: flex;
