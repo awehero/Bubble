@@ -230,10 +230,9 @@ function saveGame() {
   };
   const jsonGameState = JSON.stringify(gameState)
   localStorage.setItem('bubblePopGameState', jsonGameState);
-tItem
+}
 function loadGame() {
-  const jsonGameState = 
-  localStorage.getItem('bubblePopGameState');
+  const jsonGameState = localStorage.getItem('bubblePopGameState');
   if (jsonGameState) {
     const gameState = JSON.parse(jsonGameState);
     pops = gameState.pops;
