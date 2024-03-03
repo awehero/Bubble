@@ -174,13 +174,10 @@
 }
 #pops100 {
   background-image: url('images/pop.png');
-  background-size: cover;
 }
 #pops1000 {
   background-image: url('images/pop2.png');
-  background-size: cover;
 }
 #pops10000 {
   background-image: url('images/pop3.png');
-  background-size: cover;
 }
