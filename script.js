@@ -71,6 +71,7 @@ function updateUpgradeCostsElements() {
   updateNailCostElement();
   updateDartCostElement();
   updateFingerCostElement();
+}
 //### BUTTONS ###
 //bubble button
 document.getElementById('bubbleButton').addEventListener('click', function() {
