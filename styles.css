@@ -173,6 +173,9 @@
   height: 50px;
   width: 50px;
 }
+#upgradesTabContainer {
+  margin-top: 2%;
+}
 .achievement {
   background-image: url('images/locked.png');
   background-size: cover;
