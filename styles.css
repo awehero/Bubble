@@ -168,6 +168,11 @@
 .hidden {
   display: none;
 }
+.upgradesButton {
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
 .achievement {
   background-image: url('images/locked.png');
   background-size: cover;
