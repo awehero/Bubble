@@ -238,3 +238,9 @@ function loadGame() {
     pops = gameState.pops;
   }
 }
+//### SOUNDS ###
+//pop sound
+function playPopSound() {
+  var popSound = document.getElementById("Pop.mp3");
+  audio.play();
+}
