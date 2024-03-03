@@ -230,8 +230,10 @@ setInterval(function() {
   }
 }, 100);
 //save code
+const savedGameText = document.getElementById("autoSaveText");
 setInterval(function() {
   saveGame();
+  savedGameText();
 }, 60000);
 function saveGame() {
   const gameState = {
@@ -250,7 +252,12 @@ function loadGame() {
 document.getElementById('loadButton').addEventListener('click', function() {
   loadGame();
 });
-
+function savedGameText() {
+savedGameText.classList.remove("hidden");
+setTimeout(function() {
+  savedGameText.classList.add("hidden");
+}, 3000);
+}
 //### SOUNDS ###
 //pop sound
 function playPopSound() {
