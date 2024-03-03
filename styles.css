@@ -164,5 +164,6 @@
   background-size: cover;
 }
 #200pops {
-
+  background-image: url('images/pop.png');
+  background-size: cover;
 }
