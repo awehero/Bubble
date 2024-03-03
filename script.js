@@ -253,7 +253,7 @@ setInterval(function() {
 const savedGameText = document.getElementById("autoSaveText");
 setInterval(function() {
   saveGame();
-  savedGameText();
+  showSavedGameText();
 }, 60000);
 function saveGame() {
   const gameState = {
@@ -281,7 +281,7 @@ function loadGame() {
 document.getElementById('loadButton').addEventListener('click', function() {
   loadGame();
 });
-function showSaveGameText() {
+function showSavedGameText() {
 savedGameText.classList.remove("hidden");
 setTimeout(function() {
   savedGameText.classList.add("hidden");
