@@ -170,7 +170,7 @@
   background-size: cover;
   height: 60px;
   width: 60px;
-  text-size: 0px;
+  font-size: 0px;
 }
 #achievementDescriptionBox {
   display: none;
