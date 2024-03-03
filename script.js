@@ -142,3 +142,10 @@ function updateDartCostElement() {
 function updateFingerCostElement() {
   fingerCost.innerText = fingercost;
 }
+//### ACHIEVEMENTS ###
+//number of pops
+setInterval(function() {
+  if (pops >= 100) {
+    console.log("Yay, you got 100 pops!");
+  }
+}, 100);
