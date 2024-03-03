@@ -216,6 +216,13 @@ setInterval(function() {
     achievement9.id = "fingers100";
   }
 }, 100);
+//number of all
+const achievement10 = document.getElementById("a10");
+setInterval(function() {
+  if (fingers >= 10 && darts >= 10 && nails >= 10) {
+    achievement10.id = "all10";
+  }
+}, 100);
 //save code
 function saveGame() {
   const gameState = {
