@@ -163,6 +163,7 @@ setInterval(function() {
     achievement3.id = "pops10000";
   }
 }, 100);
+//number of nails
 const achievement4 = document.getElementById("a4");
 setInterval(function() {
   if (nails >= 50) {
@@ -173,5 +174,31 @@ const achievement5 = document.getElementById("a5");
 setInterval(function() {
   if (nails >= 100) {
     achievement5.id = "nails100";
+  }
+}, 100);
+//number of darts
+const achievement6 = document.getElementById("a6");
+setInterval(function() {
+  if (darts >= 50) {
+    achievement6.id = "darts50";
+  }
+}, 100);
+const achievement7 = document.getElementById("a7");
+setInterval(function() {
+  if (darts >= 100) {
+    achievement7.id = "darts100";
+  }
+}, 100);
+//number of fingers
+const achievement8 = document.getElementById("a8");
+setInterval(function() {
+  if (fingers >= 50) {
+    achievement8.id = "fingers50";
+  }
+}, 100);
+const achievement9 = document.getElementById("a9");
+setInterval(function() {
+  if (fingers >= 100) {
+    achievement9.id = "fingers100";
   }
 }, 100);
