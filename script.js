@@ -22,7 +22,7 @@ updateFingerCostElement();
 updateCurrentTab();
 checkForCompletedUpgrades();
 function checkForCompletedUpgrades() {
-  if
+  
 }
 function updateCurrentTab() {
   if (currentTab == "shop") {
