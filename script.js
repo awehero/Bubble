@@ -6,6 +6,10 @@ let fingers = 1;
 let nailcost = 10;
 let dartcost = 100;
 let fingercost = 50;
+let nailmultiplier = 1;
+let dartmultiplier = 1;
+let fingermultiplier = 1;
+var completedUpgrades = [0, 0, 0, 0, 0];
 let currentTab = "shop";
 const tabShop = document.getElementById("tabShop");
 const tabUpgrades = document.getElementById("tabUpgrades");
@@ -16,6 +20,10 @@ updateNailCostElement();
 updateDartCostElement();
 updateFingerCostElement();
 updateCurrentTab();
+checkForCompletedUpgrades();
+function checkForCompletedUpgrades() {
+  if
+}
 function updateCurrentTab() {
   if (currentTab == "shop") {
     tabShop.classList.remove("hidden")
@@ -326,7 +334,9 @@ function hideUpgradeButton(button) {
   }
 }
 document.getElementById('upgrade1').addEventListener('click', function() {
-  
+  if (pops >= 1) {
+    pops -= 1;
+  }
 });
 document.getElementById('upgrade2').addEventListener('click', function() {
   
