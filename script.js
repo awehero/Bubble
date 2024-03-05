@@ -95,7 +95,7 @@ document.getElementById('nailsUpgradeButton').addEventListener('click', function
     nails++;
     updatePopsCounterElement();
     updateUpgradeElements();
-    nailscost = Math.round(10 * Math.pow(1.15, nails));
+    nailcost = Math.round(10 * Math.pow(1.15, nails));
     updateNailCostElement();
   } else {
     notEnoughPops();
