@@ -98,5 +98,69 @@
     <div>
       <script src="script.js"></script>
     </div>
-  </body>
+// TEST THING JUST DELETE IF GAME NOT WORKING
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bubble Clicker Game</title>
+<style>
+    #bubble {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: gold;
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div id="bubble"></div>
+
+<script>
+    let pops = 0;
+
+    function getRandomPosition() {
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const randomX = Math.floor(Math.random() * screenWidth);
+        const randomY = Math.floor(Math.random() * screenHeight);
+        return [randomX, randomY];
+    }
+
+    function displayBubble() {
+        const bubble = document.getElementById('bubble');
+        const [x, y] = getRandomPosition();
+        bubble.style.left = x + 'px';
+        bubble.style.top = y + 'px';
+        bubble.style.display = 'block';
+        setTimeout(() => {
+            bubble.style.display = 'none';
+        }, 3000);
+    }
+
+    function onClickBubble() {
+        const bubble = document.getElementById('bubble');
+        if (bubble.style.display === 'block') {
+            bubble.style.display = 'none';
+            pops += 0.1;
+            const message = document.createElement('div');
+            message.innerText = '+10% pops';
+            message.style.position = 'absolute';
+            message.style.left = bubble.style.left;
+            message.style.top = bubble.style.top;
+            document.body.appendChild(message);
+            setTimeout(() => {
+                message.remove();
+            }, 1000);
+        }
+    }
+
+    document.getElementById('bubble').addEventListener('click', onClickBubble);
+
+    setInterval(displayBubble, 5000); // Adjust this value for the frequency of bubble appearance
+</script>
+
+</body>
 </html>
+
