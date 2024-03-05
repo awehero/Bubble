@@ -223,6 +223,10 @@
 }
 #a11 {
 }
+#a12 {
+}
+#a13 {
+}
 #pops100 {
   background-image: url('images/pop.png');
 }
@@ -255,4 +259,10 @@
 }
 #all50 {
   background-image: url('images/all50.png');
+}
+#all100 {
+  background-image: url('images/all100.png');
+}
+#all250 {
+  background-image: url('images/all250.png');
 }
