@@ -265,6 +265,18 @@ setInterval(function() {
     achievement11.id = "all50";
   }
 }, 100);
+const achievement12 = document.getElementById("a12");
+setInterval(function() {
+  if (fingers >= 100 && darts >= 100 && nails >= 100) {
+    achievement12.id = "all100";
+  }
+}, 100);
+const achievement13 = document.getElementById("a13");
+setInterval(function() {
+  if (fingers >= 250 && darts >= 250 && nails >= 250) {
+    achievement13.id = "all250";
+  }
+}, 100);
 //save code
 const savedGameText = document.getElementById("autoSaveText");
 setInterval(function() {
